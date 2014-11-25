@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Crime Analysis Result</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="common/css/app.min.css">
+    <script src="common/js/jquery.js"></script>
+    <script src="common/js/jquery.touchwipe.min.js"></script>
+    <script src="common/js/main.min.js"></script>
+    <script src="src/js/geocode.js"></script>
+    <script>
+
+    $(document).ready(function() {
+  
+    $('#search_result_container').hide();
+    $( "#search" ).click(function() 
+        {
+            geoCode($("#address").val());
+        });
+
+    });
+    </script>
+</head>
+<body>
+    <div class="app-wrapper">
+        <header>
+            <h1>Crime Analysis</h1>
+        </header>
+        <div class="app-content">
+             <section class="border-bottom" id="search_form_container">
+                    <div class="content">
+                        <h3>Enter Address</h3>
+                         <div class="form-control-group">
+                            <div class="form-control form-control-text">
+                                <input type="text" name="address" id="address" >
+
+                            </div>
+                            <input type="button" name="search" id="search"  value="Search">
+                        </div>
+                    </div>
+
+            </section>
+            <section class="border-bottom" id="search_result_container">
+                <div class="content" id="search_result">
+                </div>
+            </section>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Crime Analysis Result</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="common/css/app.min.css">
+    <script src="common/js/jquery.js"></script>
+    <script src="common/js/jquery.touchwipe.min.js"></script>
+    <script src="common/js/main.min.js"></script>
+   
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="src/js/charts.js"></script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(load_page_data);
+      function load_page_data()
+      {
+
+             
+            $.getJSON("http://10.189.93.41:9080/crime-analysis-engine-project/rest/analysis/byDay?callback=?", null, function(x)      
+            {
+
+                  drawCrimeByDay(x);    
+   
+            });
+
+       
+    }
+    
+    </script>
+    
+
+      
+      
+    </script>
+</head>
+<body>
+    <div class="app-wrapper">
+        <nav class="main-menu">
+            <a href="#">Analysis By Day</a> 
+            <a href="#">Analysis By Time</a> 
+            <a href="#">Crime Rate</a>
+        </nav>
+        <header>
+            <div class="main-menu-button main-menu-button-left">
+                <a class="menu">&nbsp;</a>
+            </div>
+            <h1>Crime Analysis</h1>
+        </header>
+        <div class="app-content">
+            <div class="tabbed-list-view-nav">
+                <a href="#" class="span-50 on">Statistics</a> 
+                <a href="#" class="span-50 on">Visualize</a> 
+                <div class="tabbed-list-view-nav-arrow">&nbsp;</div>
+            </div>
+            <ul class="tabbed-list-view">
+                <li>
+                    <ul class="list-view with-swipe left-thumbs right-one-icons">
+                        <li>
+                            <div class="thumbs">
+                                      <div id="piechart"></div>
+    
+                            </div>
+                                
+                        </li>
+ 
+                    </ul>
+                </li>
+                               <li>
+                    <ul class="list-view with-swipe left-thumbs right-one-icons">
+                         <li>
+                            <div class="thumbs">
+                                <div id="piechart2" ></div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--.tabbed-list-view-->
+        </div>
+        <!--#app-content-->
+    </div>
+    <!--#app-wrapper-->
+</body>
+</html>
