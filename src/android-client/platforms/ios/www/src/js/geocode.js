@@ -1,13 +1,12 @@
 function geoCode(address)
 {
-
-
 	$( "#search_result" ).empty();
 	$('#search_result_container').show();
 	$.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+address, null, function(res)      
-    {
+    {    
+      
 
-    	 if(res['results'].length>0)
+    	 if(res['results'][0])
     	 {
    	     	for(count=0;count<res['results'].length;count++)
    	     	{
@@ -25,14 +24,7 @@ function geoCode(address)
          }
 
     });
-
 	
 }
 
-function clearSearchResult()
-{
-            $( "#search_result" ).empty();
-            $('#search_form_container').show();
-            $('#search_result_container').hide();
 
-}

@@ -10,17 +10,37 @@
     <script src="common/js/jquery.touchwipe.min.js"></script>
     <script src="common/js/main.min.js"></script>
     <script src="src/js/geocode.js"></script>
+    <script src="src/js/reversegeocode.js"></script>
+    <script src="src/js/plotmap.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false&language=en"></script>
+        
     <script>
 
-    $(document).ready(function() {
+    $(document).ready(function() 
+    {
   
-    $('#search_result_container').hide();
-    $( "#search" ).click(function() 
-        {
-            geoCode($("#address").val());
-        });
+            $('#search_result_container').hide();
+            $( "#search" ).click(function() 
+            {
+                geoCode($("#address").val());
+            });
 
+            $( "#curentlocation" ).click(function() 
+             {
+                 getCurrentlocation();
+             });
     });
+    
+   function clearSearchResult()
+    {
+            $( "#search_result" ).empty();
+            $('#search_form_container').show();
+            $('#search_result_container').hide();
+
+    }
+
+
+
     </script>
 </head>
 <body>
@@ -37,14 +57,20 @@
                                 <input type="text" name="address" id="address" >
 
                             </div>
+                            <input type="button" name="curentlocation" id="curentlocation"  value="Get Current Location">
                             <input type="button" name="search" id="search"  value="Search">
                         </div>
                     </div>
 
+
             </section>
             <section class="border-bottom" id="search_result_container">
+                <center><div id="map" style="width: 500px; height: 400px;"><center>
+                </div>
                 <div class="content" id="search_result">
                 </div>
+
+
             </section>
         </div>
     
