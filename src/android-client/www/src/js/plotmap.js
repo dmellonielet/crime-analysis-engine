@@ -1,5 +1,6 @@
 function plotLocation(lat,lon)
 {
+    $('#map').show();
   var locations = [
    ['Your Location',lat,lon],
 
