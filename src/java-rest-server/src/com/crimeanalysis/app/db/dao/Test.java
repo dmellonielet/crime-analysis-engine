@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.crimeanalysis.app.beans.AnalysisRequest;
 import com.crimeanalysis.app.beans.ByDayAnalysis;
 import com.crimeanalysis.app.beans.ByTimeAnalysis;
+import com.crimeanalysis.app.beans.ByTypeAnalysis;
 import com.crimeanalysis.app.beans.CrimePlot;
 import com.crimeanalysis.app.util.DateUtil;
 
@@ -22,13 +23,14 @@ public class Test
 		
 		//ByDayAnalysisDAO dao=new ByDayAnalysisDAO();
 		//ByTimeAnalysisDAO dao=new ByTimeAnalysisDAO();
-		CrimePlotDAO dao=new CrimePlotDAO();
+		//CrimePlotDAO dao=new CrimePlotDAO();
+		ByTypeAnalysisDAO dao=new ByTypeAnalysisDAO();
 		
 		//ArrayList<ByDayAnalysis> result=dao.getAnalysis(an);
 		//ArrayList<ByTimeAnalysis> result=dao.getAnalysis(an);
 		
-		ArrayList<CrimePlot> result=dao.getAnalysis(an);
-		System.out.println(result.size());
+		ArrayList<ByTypeAnalysis> result=dao.getAnalysis(an);
+		System.out.println(result);
 	}
 
 }

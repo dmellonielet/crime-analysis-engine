@@ -4,6 +4,11 @@ public class ByTypeAnalysis
 {
 
 	
+	@Override
+	public String toString()
+	{
+		return "ByTypeAnalysis [crimeType=" + crimeType + ", totalCount=" + totalCount + "]";
+	}
 	private String crimeType;
 	private int totalCount;
 	public ByTypeAnalysis(String crimeType, int totalCount)
