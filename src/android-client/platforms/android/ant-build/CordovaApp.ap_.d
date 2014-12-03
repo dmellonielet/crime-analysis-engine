@@ -29,11 +29,10 @@
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/_where-is-www.txt \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www \
+/Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/analysis.html \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/common \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/cordova.js \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/cordova_plugins.js \
-/Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/crimebyday.html \
-/Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/currentlocation \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/index.html \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/plugins \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/src \
@@ -138,7 +137,9 @@
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js \
+/Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/src/css \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/src/js \
+/Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/src/css/style.css \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/src/js/charts.js \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/src/js/geocode.js \
 /Users/omkargudekar/Desktop/crime-analysis-engine/crime-anaysis-engine/src/android-client/platforms/android/assets/www/src/js/jsapi.js \

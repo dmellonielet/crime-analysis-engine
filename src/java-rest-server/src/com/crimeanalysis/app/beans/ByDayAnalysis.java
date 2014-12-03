@@ -1,7 +1,12 @@
-package com.crimeanalysis.app.modules;
+package com.crimeanalysis.app.beans;
 
 public class ByDayAnalysis
 {
+	@Override
+	public String toString()
+	{
+		return "ByDayAnalysis [dayOfWeek=" + dayOfWeek + ", totalCount=" + totalCount + "]";
+	}
 	private String dayOfWeek;
 	private int	totalCount;
 	public String getDayOfWeek()
