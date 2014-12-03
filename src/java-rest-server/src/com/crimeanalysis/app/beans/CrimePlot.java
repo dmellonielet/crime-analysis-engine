@@ -2,9 +2,15 @@ package com.crimeanalysis.app.beans;
 
 public class CrimePlot
 {
+	@Override
+	public String toString()
+	{
+		return "CrimePlot [crimeType=" + crimeType + ", lat=" + lat + ", lon=" + lon + ", timeStamp=" + timeStamp + "]";
+	}
 	private String crimeType;
-	private String xCord;
-	private String yCord;
+	private String lat;
+	private String lon;
+	private String timeStamp;
 	public String getCrimeType()
 	{
 		return crimeType;
@@ -13,20 +19,30 @@ public class CrimePlot
 	{
 		this.crimeType = crimeType;
 	}
-	public String getxCord()
+
+	public String getLat()
 	{
-		return xCord;
+		return lat;
 	}
-	public void setxCord(String xCord)
+	public void setLat(String lat)
 	{
-		this.xCord = xCord;
+		this.lat = lat;
 	}
-	public String getyCord()
+	public String getLon()
 	{
-		return yCord;
+		return lon;
 	}
-	public void setyCord(String yCord)
+	public void setLon(String lon)
 	{
-		this.yCord = yCord;
+		this.lon = lon;
 	}
+	public String getTimeStamp()
+	{
+		return timeStamp;
+	}
+	public void setTimeStamp(String timeStamp)
+	{
+		this.timeStamp = timeStamp;
+	}
+	
 }

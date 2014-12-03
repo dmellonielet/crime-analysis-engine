@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import com.crimeanalysis.app.beans.AnalysisRequest;
 import com.crimeanalysis.app.beans.ByDayAnalysis;
+import com.crimeanalysis.app.beans.ByTimeAnalysis;
+import com.crimeanalysis.app.beans.CrimePlot;
 import com.crimeanalysis.app.util.DateUtil;
 
 public class Test
@@ -18,10 +20,15 @@ public class Test
 		an.setStartDate(DateUtil.convert("01-11-2001"));
 		an.setEndDate(DateUtil.convert("01-11-2014"));
 		
-		ByDayAnalysisDAO dao=new ByDayAnalysisDAO();
-		ArrayList<ByDayAnalysis> result=dao.getAnalysis(an);
+		//ByDayAnalysisDAO dao=new ByDayAnalysisDAO();
+		//ByTimeAnalysisDAO dao=new ByTimeAnalysisDAO();
+		CrimePlotDAO dao=new CrimePlotDAO();
 		
-		System.out.println(result);
+		//ArrayList<ByDayAnalysis> result=dao.getAnalysis(an);
+		//ArrayList<ByTimeAnalysis> result=dao.getAnalysis(an);
+		
+		ArrayList<CrimePlot> result=dao.getAnalysis(an);
+		System.out.println(result.size());
 	}
 
 }

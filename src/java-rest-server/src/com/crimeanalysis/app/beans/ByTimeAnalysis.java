@@ -4,6 +4,11 @@ public class ByTimeAnalysis
 {
 
 	
+	@Override
+	public String toString()
+	{
+		return "ByTimeAnalysis [crimeTime=" + crimeTime + ", totalCount=" + totalCount + "]";
+	}
 	private String crimeTime;
 	private int totalCount;
 	public String getCrimeTime()
