@@ -20,6 +20,7 @@ Crime Analysis Engine is a mobile application aimed towards providing a tool to 
 This paper aims at giving you a detailed description of our work along with various functionalities implemented in this application.  
 
 Analysis
+---------
 
 We have been through various websites and applications doing crime analysis and generating crime map. However, they do not cater to all requirements. Also, many of those miss a graphical representation. When seen from an end user point, these sites and applications are not so easy to use. Also, the data used by them is irrelevant and unstructured. Hence, we decided to analyze the crime data of various top cities in the United States and develop a mobile application which will be have graphical representation of the data along with a crime map to depict the crime in the area entered by the user. We have provided statistical analysis of the data in following categories:
 
@@ -47,6 +48,173 @@ Extending the filter, we display the occurrence of crime according to the days o
 
 H. Crime By Type
 We display the crimes by type for a particular area, which the user has inserted. Thus, the user can view the occurrence of crime by its type.
+
+#Architecture
+--------------
+
+
+Sample JSON outputs
+-------------------
+```
+CrimeByDay
+
+?(
+[
+    {
+        dayOfWeek: "Friday",
+        totalCount: 5800
+    },
+    {
+        dayOfWeek: "Monday",
+        totalCount: 5199
+    },
+    {
+        dayOfWeek: "Saturday",
+        totalCount: 6242
+    },
+    {
+        dayOfWeek: "Sunday",
+        totalCount: 4743
+    },
+    {
+        dayOfWeek: "Thursday",
+        totalCount: 5755
+    },
+    {
+        dayOfWeek: "Tuesday",
+        totalCount: 5898
+    },
+    {
+        dayOfWeek: "Wednesday",
+        totalCount: 5762
+    }
+]
+)
+```
+```
+CrimeByTime
+?(
+[
+    {
+        crimeTime: "00:00 - 01:00",
+        totalCount: 2698
+    },
+    {
+        crimeTime: "01:00 - 02:00",
+        totalCount: 1071
+    },
+    {
+        crimeTime: "02:00 - 03:00",
+        totalCount: 815
+    },
+    {
+        crimeTime: "03:00 - 04:00",
+        totalCount: 666
+    },
+   .
+   .
+   .
+    {
+        crimeTime: "20:00 - 21:00",
+        totalCount: 1989
+    },
+    {
+        crimeTime: "21:00 - 23:00",
+        totalCount: 2401
+    },
+    {
+        crimeTime: "22:00 - 23:00",
+        totalCount: 2012
+    }
+]
+)
+```
+```
+CrimeByType
+
+?(
+[
+    {
+        crimeType: "Arrest",
+        totalCount: 3185
+    },
+    {
+        crimeType: "Arson",
+        totalCount: 69
+    },
+    {
+        crimeType: "Assault",
+        totalCount: 2308
+    },
+    {
+        crimeType: "Burglary",
+        totalCount: 750
+    },
+    {
+        crimeType: "Other",
+        totalCount: 25540
+    },
+    {
+        crimeType: "Robbery",
+        totalCount: 353
+    },
+    {
+        crimeType: "Shooting",
+        totalCount: 4
+    },
+    {
+        crimeType: "Theft",
+        totalCount: 6287
+    },
+    {
+        crimeType: "Vandalism",
+        totalCount: 903
+    }
+]
+)
+```
+
+```
+CrimeMap
+?(
+[
+    {
+        crimeType: "Burglary",
+        lat: "40.7311897",
+        lon: "-111.8150119",
+        timeStamp: "2014-01-01 01:26:00"
+    },
+    {
+        crimeType: "Arrest",
+        lat: "40.7126884",
+        lon: "-111.8579227",
+        timeStamp: "2014-01-01 01:30:00"
+    },
+    {
+        crimeType: "Other",
+        lat: "40.7694452",
+        lon: "-111.9396383",
+        timeStamp: "2014-01-01 01:40:00"
+    },
+    {
+        crimeType: "Arrest",
+        lat: "40.7483082",
+        lon: "-111.930809",
+        timeStamp: "2014-01-01 02:09:00"
+    },
+    {
+        crimeType: "Other",
+        lat: "40.6572086",
+        lon: "-111.9057385",
+        timeStamp: "2014-01-01 02:10:00"
+    },
+    .
+    .
+    .
+    .
+]
+)
+```
 
 
 
