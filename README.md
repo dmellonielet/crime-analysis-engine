@@ -51,12 +51,13 @@ We display the crimes by type for a particular area, which the user has inserted
 
 #Architecture
 --------------
-
+![ScreenShot](https://cloud.githubusercontent.com/assets/3395564/5386400/7d84981a-8080-11e4-9538-505b9e32f6d0.png)
 
 Sample JSON outputs
 -------------------
-```
 CrimeByDay
+----------
+```
 
 ?(
 [
@@ -91,8 +92,11 @@ CrimeByDay
 ]
 )
 ```
-```
+![ScreenShot](https://cloud.githubusercontent.com/assets/3395564/5386418/9188d63c-8080-11e4-885a-863452910d23.png)
+
 CrimeByTime
+-------------
+```
 ?(
 [
     {
@@ -129,9 +133,11 @@ CrimeByTime
 ]
 )
 ```
-```
-CrimeByType
+![ScreenShot](https://cloud.githubusercontent.com/assets/3395564/5386416/9184e9fa-8080-11e4-85e5-dc6a0035359d.png)
 
+CrimeByType
+-----------
+```
 ?(
 [
     {
@@ -173,9 +179,10 @@ CrimeByType
 ]
 )
 ```
-
-```
+![ScreenShot](https://cloud.githubusercontent.com/assets/3395564/5386417/91868bac-8080-11e4-8d4a-96ad819e16fc.png)
 CrimeMap
+--------
+```
 ?(
 [
     {
@@ -215,6 +222,7 @@ CrimeMap
 ]
 )
 ```
+![ScreenShot](https://cloud.githubusercontent.com/assets/3395564/5386412/9174f6d0-8080-11e4-8817-a25f673d4cc8.png)
 
 
 
