@@ -1,7 +1,7 @@
 Crime Analysis Engine(CMPE 272 Project) (Project Team 1)
 =========================================================
 
-
+Application link: http://ec2-54-148-248-224.us-west-2.compute.amazonaws.com:8080/app/
 -------------------------
 Crime Analysis Engine
 -------------------------   
