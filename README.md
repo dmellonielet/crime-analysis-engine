@@ -232,3 +232,10 @@ Technology Used
 6. Jquery
 7. CSS
 8. Apache Cordova
+
+Team Members
+-------------
+1. Omkar Gudekar
+2. Larkins Carvalho
+3. Nielet Dmello
+4. Sagar Bendale
