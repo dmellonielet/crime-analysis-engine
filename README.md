@@ -13,14 +13,14 @@ Everyday when we travel to places, how often do we know the area around us? Safe
 
 Cities Covered
 ---------------
-San Francisco
-Atlanta
-Chicago
-Sacramento
-San Deigo
-Salt Lake
-N.charlotte
-Oakland
+1. San Francisco
+2. Atlanta
+3. Chicago
+4. Sacramento
+5. San Deigo
+6. Oakland
+7. Salt Lake
+8. N.charlotte
 
 
 Introduction
