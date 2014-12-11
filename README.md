@@ -53,6 +53,14 @@ We display the crimes by type for a particular area, which the user has inserted
 --------------
 ![ScreenShot](https://cloud.githubusercontent.com/assets/3395564/5386400/7d84981a-8080-11e4-9538-505b9e32f6d0.png)
 
+How it Works
+------------
+1. Application takes either current location or the desired location for the analysis.
+2. For that purpose it makes use of Googles Geo-Coding. From the address application take the latitude and longitude.
+3. This data is then sent to the amazon aws java module.
+4. This java module then does the analysis as per the user request and generates the output json data from the MySQL database.
+5. This json data is consumed by the google charts and google maps to visualize the data.
+
 Sample JSON outputs
 -------------------
 CrimeByDay
