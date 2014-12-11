@@ -223,11 +223,12 @@ CrimeMap
 
 Technology Used
 ----------------
-J2EE
-Jersey REST Framework
-Jackson Framework
-Mysql
-HTML5
-Jquery
-CSSS
-Apache Cordova
+
+1. J2EE
+2. Jersey REST Framework
+3. Jackson Framework
+4. Mysql
+5. HTML5
+6. Jquery
+7. CSS
+8. Apache Cordova
