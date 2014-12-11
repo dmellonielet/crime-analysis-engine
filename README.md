@@ -1,16 +1,26 @@
 Crime Analysis Engine(CMPE 272 Project) (Project Team 1)
 =========================================================
 
+
 Application link: http://ec2-54-148-248-224.us-west-2.compute.amazonaws.com:8080/app/
 -------------------------
-Crime Analysis Engine
+Crime Analysis Engine 
 -------------------------   
 
 Short Description
 ------------------
 Everyday when we travel to places, how often do we know the area around us? Safety is a major concern for everyone. Hence, we need an engine that will aid us to understand how safe a particular area is at any given time. Our Crime Analysis engine provides analysis, visualization and information of the criminal data related to the crimes happening in the area. It will allow the user to see crime hotspots, isolate crimes by type, and identify the days when a particular crime occurs as well as the time.
 
-
+Cities Covered
+---------------
+San Francisco
+Atlanta
+Chicago
+Sacramento
+San Deigo
+Salt Lake
+N.charlotte
+Oakland
 
 
 Introduction
